@@ -4,9 +4,15 @@
 #include <iostream>
 #include <algorithm>
 
-Map::Map(std::pair<int,int> size){
+Map::Map(std::pair<int,int> const size){
     _size = size;
     _content =  std::vector<char> (size.first * size.second, ' ');
+}
+
+Map::Map(){
+    _size = std::make_pair(0,0);
+    _content = std::vector<char> (0, ' ');
+
 }
 
 char Map::get(int i, int j) const{
@@ -29,10 +35,10 @@ void Map::display() const{
 
 }
 
-void Map::add_room(Room room){
-    int place = room.get_place().first * (_size.first * _size.second) + room.get_place().second;
-    for (int i = room.get_place() ; i < room.get_size().first ; i++){
-        for (int j = 0 ; j < room.get_size().second ; j++)
-    } 
+void Map::add_room(const Room &room){
+    for (int i = room.get_place().first ; i<room.get_place().first + room.get_size().first ; i++){
+        for (int j = room.get_place().second ; j < room.get_place().second + room.get_size().second ; j++){
+            set(i,j,room.get(i,j));
+        }
     }
 }
