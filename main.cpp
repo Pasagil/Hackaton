@@ -11,7 +11,7 @@
 
 int main()
 {
-    bool alive;
+    bool alive = true;
     int size;
     Personnage heros;
     Map map;
@@ -22,6 +22,6 @@ int main()
 
     while (alive)
     {
-        keyboard::movement();
+        movement(map, 3, 3);
     }
 }
