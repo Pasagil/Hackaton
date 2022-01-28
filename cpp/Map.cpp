@@ -1,4 +1,6 @@
 #include "Map.h"
+#include "Corridor.h"
+#include "Room.h"
 #include <iostream>
 
 Map::Map(std::pair<int,int> size){
@@ -14,5 +16,7 @@ void Map::display(){
 }
 
 void Map::add_room(Room room){
-    
+    for (int i = room.get_place().first ; i < room.get_place().first + room.get_size().first ; i++){
+        
+    }
 }
