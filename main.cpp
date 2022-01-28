@@ -1,7 +1,14 @@
+#include <vector>
 #include <iostream>
-#include "Map.h"
 
-int main() {
-       Map map = Map(std::make_pair(20,20));
-       map.display();
+#include "Map.h"
+#include "Keyboard.h"
+#include "Opponent.h"
+#include "Personnage.h"
+#include "Objet.h"
+
+int main()
+{
+       int size;
+       Personnage heros;
 }
