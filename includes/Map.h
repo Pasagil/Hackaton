@@ -12,11 +12,14 @@ class Map{
     std::vector<char> _content;
 
     public: 
-    Map(std::pair<int,int> size);
-    void add(Objet obj);
-    void add_room(Room room);
-    void add_corridor(Corridor corridor);
+    Map(std::pair<int,int> const size);
+    Map();
+    ~Map();
+    void add(Objet &obj);
+    void add_room(Room const &room);
+    void add_corridor(Corridor const &corridor);
     void set(int i, int j, char c);
     char get(int i, int j) const;
+    std::vector<char> get_content() const;
     void display() const;
     };

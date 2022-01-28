@@ -4,9 +4,15 @@
 #include <iostream>
 #include <algorithm>
 
-Map::Map(std::pair<int,int> size){
+Map::Map(std::pair<int,int> const size){
     _size = size;
     _content =  std::vector<char> (size.first * size.second, ' ');
+}
+
+Map::Map(){
+    _size = std::make_pair(0,0);
+    _content = std::vector<char> (0, ' ');
+
 }
 
 char Map::get(int i, int j) const{
@@ -16,6 +22,11 @@ char Map::get(int i, int j) const{
 void Map::set(int i, int j, char c){
     _content[i*_size.second + j] = c;
 }
+
+std::vector<char> Map::get_content() const{
+    return _content;
+}
+
 
 void Map::display() const{
     std::cout<<" "<<std::string(_size.second, '-')<<std::endl;
@@ -29,14 +40,15 @@ void Map::display() const{
 
 }
 
-void Map::add_room(Room room){
-    int place = room.get_place().first * (_size.first * _size.second) + room.get_place().second;
-    for (int i = room.get_place() ; i < room.get_size().first ; i++){
-        for (int j = 0 ; j < room.get_size().second ; j++)
-    } 
+void Map::add_room(const Room &room){
+    for (int i = 0 ; i< room.get_size().first ; i++){
+        for (int j = 0 ; j < room.get_size().second ; j++){
+            set(i+room.get_place().first,j+room.get_place().second,room.get(i,j));
+        }
     }
 }
 
 std::vector<char> Map::get_content(){
     return _content;
+Map::~Map(){
 }

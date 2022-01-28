@@ -2,5 +2,11 @@
 
 #include "Opponent.h"
 #include "Personnage.h"
+#include "Map.h"
 
-void init_map(std::pair<int,int> _size)
+Map init_map(std::pair<int, int> size, std::vector<Room> rooms)
+{
+    Map map(size);
+    map.add_room(rooms[0]);
+    return map;
+}
