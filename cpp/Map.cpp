@@ -44,6 +44,11 @@ void Map::add_room(const Room &room){
     for (int i = 0 ; i< room.get_size().first ; i++){
         for (int j = 0 ; j < room.get_size().second ; j++){
             set(i+room.get_place().first,j+room.get_place().second,room.get(i,j));
+            if (i == 0) (set(i-1,j,'-'))
+            if (i == room.get_size().first) (set(i+1,j,'-'))
+            if (j == 0) (set(i, j-1, '|'))
+            if (j == room.get_size().second) (set(i,j+1,'|')) 
+            
         }
     }
 }
