@@ -1,0 +1,42 @@
+[
+{
+  "directory": "/home/camsz/prgms/hackathon/build",
+  "command": "/bin/c++   -I/home/camsz/prgms/hackathon/./includes -I/home/camsz/prgms/hackathon/includes  -g   -std=gnu++2a -o CMakeFiles/Hackaton.dir/main.cpp.o -c /home/camsz/prgms/hackathon/main.cpp",
+  "file": "/home/camsz/prgms/hackathon/main.cpp"
+},
+{
+  "directory": "/home/camsz/prgms/hackathon/build",
+  "command": "/bin/c++   -I/home/camsz/prgms/hackathon/./includes -I/home/camsz/prgms/hackathon/includes  -g   -std=gnu++2a -o CMakeFiles/Hackaton.dir/cpp/Corridor.cpp.o -c /home/camsz/prgms/hackathon/cpp/Corridor.cpp",
+  "file": "/home/camsz/prgms/hackathon/cpp/Corridor.cpp"
+},
+{
+  "directory": "/home/camsz/prgms/hackathon/build",
+  "command": "/bin/c++   -I/home/camsz/prgms/hackathon/./includes -I/home/camsz/prgms/hackathon/includes  -g   -std=gnu++2a -o CMakeFiles/Hackaton.dir/cpp/Map.cpp.o -c /home/camsz/prgms/hackathon/cpp/Map.cpp",
+  "file": "/home/camsz/prgms/hackathon/cpp/Map.cpp"
+},
+{
+  "directory": "/home/camsz/prgms/hackathon/build",
+  "command": "/bin/c++   -I/home/camsz/prgms/hackathon/./includes -I/home/camsz/prgms/hackathon/includes  -g   -std=gnu++2a -o CMakeFiles/Hackaton.dir/cpp/Objet.cpp.o -c /home/camsz/prgms/hackathon/cpp/Objet.cpp",
+  "file": "/home/camsz/prgms/hackathon/cpp/Objet.cpp"
+},
+{
+  "directory": "/home/camsz/prgms/hackathon/build",
+  "command": "/bin/c++   -I/home/camsz/prgms/hackathon/./includes -I/home/camsz/prgms/hackathon/includes  -g   -std=gnu++2a -o CMakeFiles/Hackaton.dir/cpp/Opponent.cpp.o -c /home/camsz/prgms/hackathon/cpp/Opponent.cpp",
+  "file": "/home/camsz/prgms/hackathon/cpp/Opponent.cpp"
+},
+{
+  "directory": "/home/camsz/prgms/hackathon/build",
+  "command": "/bin/c++   -I/home/camsz/prgms/hackathon/./includes -I/home/camsz/prgms/hackathon/includes  -g   -std=gnu++2a -o CMakeFiles/Hackaton.dir/cpp/Personnage.cpp.o -c /home/camsz/prgms/hackathon/cpp/Personnage.cpp",
+  "file": "/home/camsz/prgms/hackathon/cpp/Personnage.cpp"
+},
+{
+  "directory": "/home/camsz/prgms/hackathon/build",
+  "command": "/bin/c++   -I/home/camsz/prgms/hackathon/./includes -I/home/camsz/prgms/hackathon/includes  -g   -std=gnu++2a -o CMakeFiles/Hackaton.dir/cpp/Room.cpp.o -c /home/camsz/prgms/hackathon/cpp/Room.cpp",
+  "file": "/home/camsz/prgms/hackathon/cpp/Room.cpp"
+},
+{
+  "directory": "/home/camsz/prgms/hackathon/build",
+  "command": "/bin/c++   -I/home/camsz/prgms/hackathon/./includes -I/home/camsz/prgms/hackathon/includes  -g   -std=gnu++2a -o CMakeFiles/Hackaton.dir/cpp/keyboard.cpp.o -c /home/camsz/prgms/hackathon/cpp/keyboard.cpp",
+  "file": "/home/camsz/prgms/hackathon/cpp/keyboard.cpp"
+}
+]
