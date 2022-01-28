@@ -4,13 +4,13 @@
 #include"Map.h"
 
 void movement(Map &playground, int x, int y, Personnage perso){
-
+    int x, y = perso.get
     int indice = (playground).get(x,y);
     std::string touche;
     std::cin >> touche ;
     if(touche == "z"){
-        if( (((playground.get_content())[playground.get(x+1,y)]) == '.') || (((playground.get_content())[playground.get(x+1,y)])== '#') || (((playground.get_content())[playground.get(x+1,y)]) == '+')){
-            (playground).set(x+1,y,'x');
+        if( (((playground.get_content())[playground.get(x-1,y)]) == '.') || (((playground.get_content())[playground.get(x-1,y)])== '#') || (((playground.get_content())[playground.get(x-1,y)]) == '+')){
+            (playground).set(x-1,y,'x');
             (playground).set(x,y,'.');}
         if()
 
@@ -21,8 +21,8 @@ void movement(Map &playground, int x, int y, Personnage perso){
             (playground).set(x,y,'.');}
     };
     if(touche == "s"){
-        if( (((playground.get_content())[playground.get(x-1,y)]) == '.') || (((playground.get_content())[playground.get(x-1,y)])== '#') || (((playground.get_content())[playground.get(x-1,y)]) == '+')){
-            (playground).set(x-1,y,'x');
+        if( (((playground.get_content())[playground.get(x+1,y)]) == '.') || (((playground.get_content())[playground.get(x+1,y)])== '#') || (((playground.get_content())[playground.get(x+1,y)]) == '+')){
+            (playground).set(x+1,y,'x');
             (playground).set(x,y,'.');}
         
     };
