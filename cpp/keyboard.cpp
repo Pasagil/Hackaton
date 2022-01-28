@@ -4,32 +4,31 @@
 #include"Map.h"
 #include "keyboard.h"
 
-void movement(Map &playground, int x, int y){
-
-    int indice = (playground).get(x,y);
+void movement(Map &playground, Personnage perso){
+    int x, y = perso.get_pos();
     std::string touche;
     std::cin >> touche ;
     if(touche == "z"){
-        if( (((playground.get_content())[indice]) == '.') || (((playground.get_content())[indice])== '#') || (((playground.get_content())[indice]) == '+')){
-            (playground).set(x,y+1,'x');
+        if( ((playground.get(x-1,y)]) == '.') || ((playground.get(x-1,y)])== '#') || (((playground.get(x-1,y)]) == '+')){
+            (playground).set(x-1,y,'x');
             (playground).set(x,y,'.');}
-        //Ici on met les autres if : si y'a des ennemis à attaquer, des pieces a recup etc
+        if()
 
     };
     if(touche == "q"){
-        if( (((playground.get_content())[indice]) == '.') || (((playground.get_content())[indice])== '#') || (((playground.get_content())[indice]) == '+')){
-            (playground).set(x-1,y,'x');
+        if( (playground.get(x, y-1) == '.') || (playground.get(x, y-1)== '#') || ((playground.get_content(x, y-1) == '+')){
+            (playground).set(x,y-1,'x');
             (playground).set(x,y,'.');}
     };
     if(touche == "s"){
-        if( (((playground.get_content())[indice]) == '.') || (((playground.get_content())[indice])== '#') || (((playground.get_content())[indice]) == '+')){
-            (playground).set(x,y-1,'x');
+        if( ((playground.get(x+1,y)]) == '.') || ((playground.get(x+1,y)])== '#') || (((playground.get(x+1,y)]) == '+')){
+            (playground).set(x+1,y,'x');
             (playground).set(x,y,'.');}
         
     };
     if(touche == "d"){
-        if( (((playground.get_content())[indice]) == '.') || (((playground.get_content())[indice])== '#') || (((playground.get_content())[indice]) == '+')){
-            (playground).set(x+1,y,'x');
+        if( (playground.get(x, y+1) == '.') || (playground.get_content(x, y+1)== '#') || ((playground.get_content(x, y+1) == '+')){
+            (playground).set(x,y+1,'x');
             (playground).set(x,y,'.');}
         
     };
