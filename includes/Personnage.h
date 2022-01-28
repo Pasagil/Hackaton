@@ -20,10 +20,11 @@ class Personnage{
     //Helmet _helmet;
     int thirst;
     int hunger;
+    std::pair<int, int> _position;
 
     public :
 
-    Personnage(): _hitpoint(12), _max_hitpoint(12), _strength(16), _or(0), _bag(std::vector<Objet*>{}), _bag_size(10), _on_hand(Objet()), thirst(20), hunger(20){};
+    Personnage(): _hitpoint(12), _max_hitpoint(12), _strength(16), _or(0), _bag(std::vector<Objet*>{}), _bag_size(10), _on_hand(Objet()), thirst(20), hunger(20), _position(std::make_pair(5,5)){};
 
     void damage(int dam);
     void soin(int s);
@@ -32,4 +33,6 @@ class Personnage{
     void gain_or(int o);
     void gain_strength(int gain);
     void ramasser_objet(Objet* obj);
+
+    std::pair<int, int> get_pos();
 };

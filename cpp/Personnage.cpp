@@ -47,3 +47,8 @@ void Personnage::ramasser_objet(Objet* obj){
         }
     }
 }
+
+std::pair<int, int> Personnage::get_pos()
+{
+    return _position;
+}
