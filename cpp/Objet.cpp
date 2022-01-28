@@ -13,7 +13,7 @@ std::string Objet::get_type(){
     return _type;
 }
 
-std::string Parchemin::get_contenu(){
+std::string parchemin::get_contenu(){
     return _contenu;
 }
 
@@ -21,16 +21,16 @@ int arme::get_dmg(){
     return _dmg;
 }
 
-int armure::gauge(){
+int armure::get_gauge(){
     return _gauge;
 }
 
-int nourriture::gauge(){
+int nourriture::get_gauge(){
     return _gauge;
 }
 
 std::string potion::get_nom(){
-    return _nom;
+    return _name;
 }
 
 int potion::get_gauge(){
