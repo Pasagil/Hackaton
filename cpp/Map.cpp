@@ -36,3 +36,7 @@ void Map::add_room(Room room){
     } 
     }
 }
+
+std::vector<char> Map::get_content(){
+    return _content;
+}
