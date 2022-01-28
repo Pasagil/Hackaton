@@ -5,7 +5,6 @@ Room::Room(std::pair<int,int> const size, std::pair<int,int> const place, std::p
     _place = place;
     _door = door;
     _content = std::vector<char> (size.first * size.second, '.');
-    set(door.first,door.second,'+');
 };
 
 char Room::get(int i, int j) const{
