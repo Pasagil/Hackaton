@@ -22,7 +22,7 @@ Opponent::Opponent(int life, int dpt, std::string name)
     std::pair<int, int> _position;
 }
 
-~Opponent(){}
+Opponent::~Opponent(){}
 
 //--// Getters
 
@@ -51,14 +51,14 @@ void Opponent::set_dpt(int dpt)
     _dpt = dpt;
 }
 
-void Opponent::set_position(i, j)
+void Opponent::set_position(int i, int j)
 {
-    _position = std::make_pair(int i, int j);
+    _position = std::make_pair(i, j);
 }
 
 //--// Methods
 
-void Opponent::hit(Perso& target_perso)
+void Opponent::hit(Personnage& target_perso)
 {
     target_perso.damage(this->get_dpt());
 }

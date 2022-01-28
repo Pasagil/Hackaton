@@ -22,7 +22,8 @@ public:
 
     void set_life(int life);
     void set_dpt(int dpt);
+    void Opponent::set_position(int i, int j);
 
-    void hit(Perso& target_perso);
+    void hit(Personnage& target_perso);
     void damage(int dmg);
 };

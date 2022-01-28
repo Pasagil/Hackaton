@@ -1,4 +1,3 @@
-#include <iostream>
 #include <vector>
 #include <iostream>
 
@@ -8,8 +7,8 @@
 #include "Personnage.h"
 #include "Objet.h"
 
-int main() {
+int main()
+{
        int size;
        Personnage heros;
-
 }
