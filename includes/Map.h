@@ -4,6 +4,7 @@
 #include <string>
 #include "Corridor.h"
 #include "Room.h"
+#include "Objet.h"
 
 class Map{
     private:
@@ -12,8 +13,10 @@ class Map{
 
     public: 
     Map(std::pair<int,int> size);
-    void add(std::string obj, std::pair<int,int> place);
+    void add(Objet obj);
     void add_room(Room room);
     void add_corridor(Corridor corridor);
-    void display();
+    void set(int i, int j, char c);
+    char get(int i, int j) const;
+    void display() const;
     };
