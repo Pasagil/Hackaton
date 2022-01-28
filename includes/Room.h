@@ -9,7 +9,7 @@ class Room{
     std::vector<char> _content ;
 
     public:
-    Room(std::pair<int,int> size, std::pair<int,int> place);
+    Room(std::pair<int,int> const size, std::pair<int,int> const place, std::pair<int,int> const door);
     ~Room();
     void set(int i, int j, char c);
     char get(int i, int j) const;

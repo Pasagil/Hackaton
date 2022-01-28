@@ -23,6 +23,11 @@ void Map::set(int i, int j, char c){
     _content[i*_size.second + j] = c;
 }
 
+std::vector<char> Map::get_content() const{
+    return _content;
+}
+
+
 void Map::display() const{
     std::cout<<" "<<std::string(_size.second, '-')<<std::endl;
     for (int i = 0 ; i < _content.size() ; i++){
@@ -36,9 +41,12 @@ void Map::display() const{
 }
 
 void Map::add_room(const Room &room){
-    for (int i = room.get_place().first ; i<room.get_place().first + room.get_size().first ; i++){
-        for (int j = room.get_place().second ; j < room.get_place().second + room.get_size().second ; j++){
-            set(i,j,room.get(i,j));
+    for (int i = 0 ; i< room.get_size().first ; i++){
+        for (int j = 0 ; j < room.get_size().second ; j++){
+            set(i+room.get_place().first,j+room.get_place().second,room.get(i,j));
         }
     }
+}
+
+Map::~Map(){
 }

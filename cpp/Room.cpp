@@ -1,8 +1,9 @@
 #include "Room.h"
 
-Room::Room(std::pair<int,int> size, std::pair<int,int> place){
+Room::Room(std::pair<int,int> const size, std::pair<int,int> const place, std::pair<int,int> const door){
     _size = size;
     _place = place;
+    _door = door;
     _content = std::vector<char> (size.first * size.second, '.');
 };
 
@@ -24,4 +25,7 @@ std::pair<int,int> Room::get_size() const{
 
 std::vector<char> Room::get_content() const{
     return _content;
+}
+
+Room::~Room(){
 }
