@@ -16,5 +16,7 @@ class Map{
     void add(Objet obj);
     void add_room(Room room);
     void add_corridor(Corridor corridor);
+    void set(int i, int j, char c);
+    char get(int i, int j) const;
     void display() const;
     };
