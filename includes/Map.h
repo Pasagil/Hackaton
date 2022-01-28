@@ -15,5 +15,5 @@ class Map{
     void add(std::string obj, std::pair<int,int> place);
     void add_room(Room room);
     void add_corridor(Corridor corridor);
-    void display();
+    void display() const;
     };

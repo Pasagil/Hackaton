@@ -8,7 +8,7 @@ Map::Map(std::pair<int,int> size){
     _content =  std::vector<char> (size.first * size.second, ' ');
 }
 
-void Map::display(){
+void Map::display() const{
     std::cout<<std::string(_size.second, '-')<<std::endl;
     for (int i = 0 ; i < _content.size() ; i++){
         if (i % _size.second == 0) (std::cout<<"|");
