@@ -53,5 +53,7 @@ void Map::add_room(const Room &room){
     }
 }
 
+std::vector<char> Map::get_content(){
+    return _content;
 Map::~Map(){
 }
