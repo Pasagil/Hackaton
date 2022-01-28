@@ -10,6 +10,7 @@ private:
     int _life;
     int _dpt;
     std::string _name;
+    std::pair<int, int> _position;
 public:
     Opponent();
     Opponent(int life, int dpt, std::string _name);

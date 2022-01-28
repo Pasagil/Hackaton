@@ -1,8 +1,6 @@
 #include<iostream>
 #include<vector>
 
-class Item;
-
 class Personnage{
     
     private :
@@ -30,29 +28,5 @@ class Personnage{
     void gain_or(int o);
     void gain_strength(int gain);
     void ramaser_objet(Objet obj);
-
-};
-
-class Ennemi{
-
-};
-
-class Arme{
-
-};
-
-class Potion{
-
-};
-
-class Objet{
-
-};
-
-class Armure{
-
-};
-
-class Casques{
 
 };
