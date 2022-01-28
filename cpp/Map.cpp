@@ -44,15 +44,11 @@ void Map::add_room(const Room &room){
     for (int i = 0 ; i< room.get_size().first ; i++){
         for (int j = 0 ; j < room.get_size().second ; j++){
             set(i+room.get_place().first,j+room.get_place().second,room.get(i,j));
-            if (i == 0) (set(i-1 + room.get_place().first,j+room.get_place().second,'-'));
-            if (i == room.get_size().first-1) (set(i+1+ room.get_place().first,j+room.get_place().second,'-'));
-            if (j == 0) (set(i+ room.get_place().first, j-1+room.get_place().second, '|'));
-            if (j == room.get_size().second-1) (set(i+ room.get_place().first,j+1+room.get_place().second,'|'));
-            
         }
     }
 }
 
-
+std::vector<char> Map::get_content(){
+    return _content;
 Map::~Map(){
 }
