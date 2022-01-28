@@ -1,4 +1,5 @@
 #include"personnage.h"
+#include"objet.h"
 pragma once
 
 void Personnage::damage(int dam){
@@ -49,3 +50,10 @@ void Personnage::ramaser_objet(Objet obj){
 
     )
 }
+
+void Personnage::prendre_en_main(int j){
+    Objet a = _bag[j];
+    _bag[j] = _On_hand;
+    _On_hand = a;
+}
+
