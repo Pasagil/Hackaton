@@ -14,7 +14,7 @@ Opponent::Opponent()
     std::pair<int, int> _position;
 }
 
-Opponent::Opponent(int life, int dpt, std::string name)
+Opponent::Opponent(int life, int dpt, const std::string& name)
 {
     int _life = life;
     int _dpt = dpt;
@@ -41,17 +41,17 @@ std::string Opponent::get_name() const
     return _name;
 }
 
-void Opponent::set_life(int life)
+void Opponent::set_life(const int life)
 {
     _life = life;
 }
 
-void Opponent::set_dpt(int dpt)
+void Opponent::set_dpt(const int dpt)
 {
     _dpt = dpt;
 }
 
-void Opponent::set_position(int i, int j)
+void Opponent::set_position(const int i, const int j)
 {
     _position = std::make_pair(i, j);
 }
